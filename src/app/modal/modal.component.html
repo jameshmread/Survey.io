@@ -1,0 +1,12 @@
+<div class="modal-background-dim" [class.closed]="!isOpen" (click)="closeModal()"></div>
+<div class="modal" [class.closed]="!isOpen">
+  <div class="modal-header">
+    <div class="modal-header-text">{{headerText}}</div>
+      <div class="fas fa fa-times-circle fa-2x modal-close-button"
+      (click)="closeModal()">      
+    </div>
+  </div>
+  <div class="modal-body">
+  </div>
+  <div class="modal-footer"></div>
+</div>
