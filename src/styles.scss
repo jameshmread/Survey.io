@@ -1,4 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+
 body {
       overflow: hidden;
 }
+
+$background-grey-primary : rgb(136, 136, 136);
+$background-blue-primary : #00638d;
+$box-shadow: 5px 6px rgba(#000, .125);
+$box-shadow-blue: 5px 6px rgba(#00638d, .125);

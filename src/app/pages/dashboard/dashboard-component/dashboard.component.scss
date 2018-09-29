@@ -1,0 +1,42 @@
+@import 'src/styles.scss';
+.dashboard-header {
+      padding: 20px;
+      border-width: 4px;
+      border-style: solid;
+      border-color: $box-shadow;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+}
+
+.dashboard-body {
+      position: absolute;
+      top: 100px;
+      height: 80%;
+      width: 100%;
+      background: $background-grey-primary;
+      border-radius: 25px;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+}
+
+.dashboard-item {
+      margin: 10px;
+}
+
+.dashboard-chart {
+      border-radius: 25px;
+      width: 30%;
+      height: 45%;
+      background: $background-blue-primary;
+      box-shadow: $box-shadow-blue;
+}
+
+.dashboard-number {
+      border-radius: 5px;
+      width: 400px;
+      height: 100px;
+      background: white;
+      box-shadow: $box-shadow;
+}
