@@ -7,6 +7,8 @@ import { SideMenuComponent } from './side-menu/side-menu.component';
 import { LoginComponent } from './pages/login/login.component';
 import { ModalComponent } from './modal/modal.component';
 import { DashboardModule } from './pages/dashboard/dashboard.module';
+import { RoutingModule } from './core/routes/routing.module';
+import { RouterModule } from '../../node_modules/@angular/router';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { DashboardModule } from './pages/dashboard/dashboard.module';
   imports: [
     BrowserModule,
     CoreModule,
-    DashboardModule
+    DashboardModule,
+    RoutingModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]

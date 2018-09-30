@@ -5,7 +5,7 @@ import { AppRoutes } from './routes';
   declarations: [
   ],
   imports: [
-        RouterModule.forRoot(AppRoutes)
+    RouterModule.forRoot(AppRoutes)
   ]
 })
 export class RoutingModule { }
