@@ -1,0 +1,12 @@
+@mixin flex-row($padding) {
+      display: flex;
+      flex-flow: row;
+      justify-content: space-around;
+      padding: $padding;
+}
+
+@mixin flex-col($padding) {
+      display: flex;
+      flex-flow: column;
+      padding: $padding;
+}

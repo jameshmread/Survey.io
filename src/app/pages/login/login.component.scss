@@ -1,0 +1,56 @@
+@import 'src/styles.scss';
+@import 'src/app/mixins/flex-box.mixin.scss';
+.login {
+      @include flex-row(20%);
+}
+.login-form {
+      position: relative;
+      height: 400px;
+      width: 500px;
+      background-color: rgba(black, 0.5);
+      border-radius: 25px;
+}
+
+.login-header {
+      @include flex-row(5%);
+      background-color: $background-blue-primary;
+      border-top-left-radius: 25px;
+      border-top-right-radius: 25px;
+
+}
+.login-header-text {
+      color: white;
+      font-weight: 400;
+}
+
+.login-body {
+      @include flex-col(50px);
+}
+
+.input-wrapper {
+      @include flex-row(5px);
+      justify-content: space-between;
+}
+
+input {
+      width: 95%;
+      padding-left: 10px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      background: rgba(#000, 0.6);
+      color: white;
+      border: 1px solid transparent;
+      &:hover {
+            border-width: 1px;
+            border-bottom: solid $background-blue-primary;
+      }
+      &:focus {
+            border-width: 1px;
+            border-bottom: solid $background-blue-primary;
+      }
+}
+
+.login-footer {
+      @include flex-row(5px);
+      float: right;
+}
