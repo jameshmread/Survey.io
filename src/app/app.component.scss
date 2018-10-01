@@ -1,0 +1,6 @@
+@import 'src/app/mixins/flex-box.mixin.scss';
+
+.app-layout {
+      @include flex-row(0);
+      justify-content: flex-start;
+}

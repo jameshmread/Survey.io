@@ -1,0 +1,29 @@
+@import 'src/app/mixins/flex-box.mixin.scss';
+@import 'src/styles.scss';
+.side-menu {
+      position: absolute;
+      width: 250px;
+      height: 100vh;
+      background-color: $menu-grey;
+      z-index: 9999;
+      @include flex-col(0);
+      border-right: 1px solid white;
+}
+
+.menu-item {
+      padding: 10px;
+      background-color: $background-blue-primary;
+      color: white;
+}
+
+.menu-header {
+      padding: 10px;
+      background-color: $menu-grey;
+      color: white;
+      border-bottom: 2px solid;
+      border-color: white;
+}
+
+.fa-chevron-left {
+      float: right;
+}
