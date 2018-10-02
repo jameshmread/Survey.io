@@ -1,13 +1,17 @@
 @import 'src/app/mixins/flex-box.mixin.scss';
 @import 'src/styles.scss';
 .side-menu {
-      position: absolute;
+      position: relative;
       width: 250px;
       height: 100vh;
       background-color: $menu-grey;
       z-index: 9999;
       @include flex-col(0);
       border-right: 1px solid white;
+}
+
+.collapsed {
+      width: 100px;
 }
 
 .menu-item {
@@ -24,6 +28,6 @@
       border-color: white;
 }
 
-.fa-chevron-left {
+.btn-default {
       float: right;
 }

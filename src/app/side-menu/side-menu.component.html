@@ -1,5 +1,8 @@
-<div class="side-menu">
-  <div class="menu-header">Application Name<i class="fa fa-chevron-left"></i></div>
+<div class="side-menu" [@openClose]="collapsed" [class.collapsed]="collapsed">
+  <div class="menu-header">
+    Application Name
+    <button type="button" (click)="toggleMenu()" class="btn btn-default"><i class="fa fa-chevron-left"></i></button>
+  </div>
   <div class="menu-item">Hello</div>
   <div class="menu-item">Hello</div>
   <div class="menu-item">Hello</div>

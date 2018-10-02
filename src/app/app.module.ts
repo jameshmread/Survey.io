@@ -9,7 +9,7 @@ import { ModalComponent } from './modal/modal.component';
 import { DashboardModule } from './pages/dashboard/dashboard.module';
 import { RoutingModule } from './core/routes/routing.module';
 import { RouterModule } from '../../node_modules/@angular/router';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +22,8 @@ import { RouterModule } from '../../node_modules/@angular/router';
     CoreModule,
     DashboardModule,
     RoutingModule,
-    RouterModule
+    RouterModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
